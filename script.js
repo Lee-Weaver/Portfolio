@@ -1,7 +1,8 @@
-const burgerIcon = document.querySelector('.burger-menu');
-const menu = document.querySelector('.menu');
+const burgerIcon = document.querySelector('.burger-menu')
+const menu = document.querySelector('.menu')
 
 burgerIcon.addEventListener('click', () => {
     burgerIcon.classList.toggle('change')
-    menu.classList.toggle('hidden')
+    menu.classList.toggle('open')
+    menu.classList.toggle('close')
 })
