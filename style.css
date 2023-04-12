@@ -106,7 +106,9 @@ nav > a {
 }
 
 .tools > img {
-    max-width: 200px;
+    max-width: 150px;
+    align-self: center;
+    justify-self:center;
 }
 
 .tools > h3 {
@@ -170,11 +172,74 @@ nav > a {
 
 @media (min-width: 800px) {
 
+body {
+    grid-template-areas: ;
+}
+
 .tools {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+nav {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 5fr;
+}
+.burger-menu {
+    display: none;
+    color: aqua;
+}
 
+.menu {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+.menu > li {
+    padding: 10px;
+}
+.tools > h3 {
+    grid-column: 1 / span 3;
+}
+
+.tools {
+    margin-top: 20px;
+    margin-right: 50px;
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 3;
+}
+
+.tools > img {
+    max-width: 100px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    gap: 40px;
+}
+
+.about > h2 {
+    padding-top: 100px;
+    grid-column: 1;
+}
+.projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projects > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.project-item {
+    width: 30%;
+    height: 450px;
+}
 
 
 }
